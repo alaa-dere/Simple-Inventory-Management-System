@@ -48,4 +48,18 @@ private Product? FindProduct(string name)
 {
     return _products.Find(p => p.Name.ToLower() == name.ToLower());
 }
+
+public void DeleteProduct(string name)
+{
+    Product? product = FindProduct(name);
+
+    if (product == null)
+    {
+        Console.WriteLine($"\nProduct '{name}' not found.");
+        return;
+    }
+
+    _products.Remove(product);
+    Console.WriteLine($"\nProduct '{name}' deleted successfully!");
+}
 }

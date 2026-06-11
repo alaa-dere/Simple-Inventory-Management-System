@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Desktop\\projects\\InventorySystem\\InventorySystem.csproj",
+      "projectUniqueName": "C:\\projects\\InventorySystem\\InventorySystem.csproj",
       "projectName": "InventorySystem",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\projects\\InventorySystem\\InventorySystem.csproj",
+      "projectPath": "C:\\projects\\InventorySystem\\InventorySystem.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Desktop\\projects\\InventorySystem\\obj\\",
+      "outputPath": "C:\\projects\\InventorySystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
