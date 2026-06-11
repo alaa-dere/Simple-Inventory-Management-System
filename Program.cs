@@ -45,6 +45,8 @@ while (true)
             break;    
 
         case "6":
-            return;
+            Console.WriteLine("\nGoodbye!");
+            Environment.Exit(0);
+            break;
     }
 }
