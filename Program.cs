@@ -20,10 +20,17 @@ while (true)
             string name = Console.ReadLine()!;
 
             Console.Write("Price: ");
-            double price = double.Parse(Console.ReadLine()!);
-
+            if (!double.TryParse(Console.ReadLine(), out double price))
+            {
+                Console.WriteLine("Invalid price. Please enter a number.");
+                break;
+            }
             Console.Write("Quantity: ");
-            int quantity = int.Parse(Console.ReadLine()!);
+            if (!int.TryParse(Console.ReadLine(), out int quantity))
+            {
+                Console.WriteLine("Invalid quantity. Please enter a whole number.");
+                break;
+            }
 
             inventory.AddProduct(name, price, quantity);
             break;

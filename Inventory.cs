@@ -35,11 +35,21 @@ class Inventory
     Console.Write("New name: ");
     product.Name = Console.ReadLine()!;
 
-    Console.Write("New price: ");
-    product.Price = double.Parse(Console.ReadLine()!);
+Console.Write("New price: ");
+if (!double.TryParse(Console.ReadLine(), out double newPrice))
+{
+    Console.WriteLine("Invalid price.");
+    return;
+}
+product.Price = newPrice;
 
-    Console.Write("New quantity: ");
-    product.Quantity = int.Parse(Console.ReadLine()!);
+Console.Write("New quantity: ");
+if (!int.TryParse(Console.ReadLine(), out int newQuantity))
+{
+    Console.WriteLine("Invalid quantity.");
+    return;
+}
+product.Quantity = newQuantity;
 
     Console.WriteLine("\nProduct updated successfully!");
 }
