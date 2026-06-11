@@ -1,12 +1,10 @@
-﻿using System;
-using InventoryManagement;
-
+﻿
 Inventory inventory = new Inventory();
 
 while (true)
 {
-    Console.WriteLine("\n--- Main Menu ---");
-    Console.WriteLine("1. Add a product");
+    Console.WriteLine("\n1. Add a product");
+    Console.WriteLine("2. View all products");
     Console.WriteLine("6. Exit");
     Console.Write("Enter your choice: ");
 
@@ -27,12 +25,11 @@ while (true)
             inventory.AddProduct(name, price, quantity);
             break;
 
-        case "6":
-            Console.WriteLine("Exiting... Goodbye!");
-            return;
-            
-        default:
-            Console.WriteLine("Invalid choice, try again.");
+        case "2":
+            inventory.ViewProducts();
             break;
+
+        case "6":
+            return;
     }
 }
