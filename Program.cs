@@ -7,6 +7,7 @@ while (true)
     Console.WriteLine("2. View all products");
     Console.WriteLine("3. Edit a product");
     Console.WriteLine("4. Delete a product");
+    Console.WriteLine("5. Search for a product");
     Console.WriteLine("6. Exit");
     Console.Write("Enter your choice: ");
 
@@ -37,6 +38,10 @@ while (true)
         case "4":
             Console.Write("Enter product name to delete: ");
             inventory.DeleteProduct(Console.ReadLine()!);
+            break;    
+        case "5":
+            Console.Write("Enter product name to search: ");
+            inventory.SearchProduct(Console.ReadLine()!);
             break;    
 
         case "6":

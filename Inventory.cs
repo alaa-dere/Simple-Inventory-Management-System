@@ -62,4 +62,18 @@ public void DeleteProduct(string name)
     _products.Remove(product);
     Console.WriteLine($"\nProduct '{name}' deleted successfully!");
 }
+
+public void SearchProduct(string name)
+{
+    Product? product = FindProduct(name);
+
+    if (product == null)
+    {
+        Console.WriteLine($"\nProduct '{name}' not found.");
+        return;
+    }
+
+    Console.WriteLine("\n--- Product Found ---");
+    Console.WriteLine(product);
+}
 }
