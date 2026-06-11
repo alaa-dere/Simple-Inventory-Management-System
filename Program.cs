@@ -5,6 +5,7 @@ while (true)
 {
     Console.WriteLine("\n1. Add a product");
     Console.WriteLine("2. View all products");
+    Console.WriteLine("3. Edit a product");
     Console.WriteLine("6. Exit");
     Console.Write("Enter your choice: ");
 
@@ -28,6 +29,10 @@ while (true)
         case "2":
             inventory.ViewProducts();
             break;
+        case "3":
+            Console.Write("Enter product name to edit: ");
+            inventory.EditProduct(Console.ReadLine()!);
+            break;    
 
         case "6":
             return;
